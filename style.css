@@ -1,0 +1,17 @@
+/* table{
+    border: black 1px;
+    width: 100px;
+    height: 100px;
+} */
+table{
+    border-spacing: 10px;
+}
+td{
+    width: 20px;
+    height: 20px;
+    border: black 2px solid;
+
+}
+td:hover{
+    background-color: aqua;
+}
