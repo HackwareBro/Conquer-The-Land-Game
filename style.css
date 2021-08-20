@@ -1,17 +1,61 @@
-/* table{
-    border: black 1px;
-    width: 100px;
-    height: 100px;
-} */
-table{
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table#game-area{
     border-spacing: 10px;
+    margin: 0% auto;
 }
 td{
-    width: 20px;
-    height: 20px;
-    border: black 2px solid;
-
+    width: 40px;
+    height: 40px;
+    font-weight: 1000;
+    text-align: center;
+    cursor: pointer;
+    border: brown 2px solid;
+   
 }
-td:hover{
+
+.empty{
+    /* just dummy */
+}
+/* for player spaces */
+.player{
+    border-radius: 7px;
+    border: blue 2px solid;
     background-color: aqua;
+    color: black;
+}
+.player:hover{
+    border-radius: 12px;
+}
+.player:active{
+    border: aqua 2px solid;
+    background-color: blue;
+    color: aliceblue;
+}
+/* opponent also called as 2nd player */
+.opponent{
+    border-radius: 7px;
+    border: red 2px solid;
+    background-color: pink;
+    color: black;
+}
+.opponent:hover{
+    border-radius: 12px;
+}
+
+.opponent:active{
+    border: pink 2px solid;
+    background-color: red;
+    color: aliceblue;
+}
+@media screen and (max-width: 700px) {
+    td{
+        width: 20px;
+        height: 20px;
+        border: black 2px solid;
+    }
 }

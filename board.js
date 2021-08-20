@@ -6,6 +6,8 @@ function createGameArea(){
         for (let j = 0; j < 10; j++){
             col = document.createElement('td')
             col.id = 'c'+ (i*10 + j);
+            col.className = 'empty'
+            // col.appendChild(document.createTextNode('ta1'))  just for testing
             document.querySelector('tr#r'+i).appendChild(col);
         }
     }
