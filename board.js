@@ -7,10 +7,10 @@ function createGameArea(){
             col = document.createElement('td')
             col.id = 'c'+ (i*10 + j);
             col.className = 'empty'
+            col.setAttribute('onclick','move(this)')
             // col.appendChild(document.createTextNode('ta1'))  just for testing
             document.querySelector('tr#r'+i).appendChild(col);
         }
     }
-  
 }
 createGameArea();

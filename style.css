@@ -15,12 +15,13 @@ td{
     text-align: center;
     cursor: pointer;
     border: brown 2px solid;
-   
+    transition: 0.5s;
 }
 
 .empty{
     /* just dummy */
 }
+
 /* for player spaces */
 .player{
     border-radius: 7px;
@@ -36,6 +37,7 @@ td{
     background-color: blue;
     color: aliceblue;
 }
+
 /* opponent also called as 2nd player */
 .opponent{
     border-radius: 7px;
