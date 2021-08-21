@@ -26,9 +26,26 @@ function createGameArea(){
     opponent = document.getElementById('c' + _2dTo1d(1,1))
     opponent.className='opponent';
     opponent.innerHTML = '3'
-    player = document.getElementById('c' + _2dTo1d(8,8))
+    player = document.getElementById('c' + _2dTo1d(1,2))
     player.className='player';
     player.innerHTML='3';
 
+}
+function resetBoard(){
+    for(let i = 0; i < 100; i++){
+        place = document.getElementById('c'+i);
+        if(i == 11){
+            place.className = 'opponent';
+            place.innerHTML = '3'
+        }
+        else if(i == 88){
+            place.className = 'player';
+            place.innerHTML = '3'
+        }
+        else{
+            place.className = 'empty';
+            place.innerHTML = '';
+        }
+    }
 }
 createGameArea();
