@@ -178,4 +178,8 @@ background: #144E75; }
         width: 80px;
         height: 80px;
     }
+    .startbtn {
+        font-size: 20px;
+        padding: 10px;
+    }
 }
