@@ -25,6 +25,17 @@ function changeTokenNumber(token, value){
         empty_spaces.innerHTML = parseInt(empty_spaces.innerHTML) - value;
     }
 }
+function interchangeTokenNumber(token){
+    let red_count = document.getElementById('red-count');
+    let blue_count = document.getElementById('blue-count');    
+    if(token == 'player'){
+        blue_count.innerHTML = parseInt(blue_count.innerHTML) + 1
+        red_count.innerHTML = parseInt(red_count.innerHTML) - 1
+    }else{
+        red_count.innerHTML = parseInt(red_count.innerHTML) + 1
+        blue_count.innerHTML = parseInt(blue_count.innerHTML) - 1 
+    }
+}
 
 function incMoves(){
     let move_count = document.getElementById('move-count');

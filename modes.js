@@ -23,12 +23,14 @@ function restartGame(){
 function move(element, moves, token){
     if(element.className != 'empty'){        
         let number = parseInt(element.innerHTML, 10)    
-        if(number > 2){            
+        if(number > 2){
+            if(element.className != token){ //to decrement the place where against party has 3 value
+                changeTokenNumber(element.className,-1)
+            }            
             element.className = 'empty';
             element.innerHTML = ''
             changeTokenNumber(token,-1);
-            place = _1dTo2d(element.id);  
-
+            place = _1dTo2d(element.id); 
             //now spread the tokens on four places
             if(place.row > 0){
                 var up = document.getElementById('c'+_2dTo1d(place.row-1,place.col));
@@ -77,6 +79,7 @@ function move(element, moves, token){
                     moves.right = false
                 }
                 else{
+                    
                     moves.right = true 
                 }
             }
@@ -85,7 +88,6 @@ function move(element, moves, token){
                 move(left,Object.assign({},moves),token);
             }
             if(moves.right == true){
-         
                 move(right,Object.assign({},moves),token);
             }
             if(moves.up == true){
@@ -98,8 +100,8 @@ function move(element, moves, token){
         }
         else{
             if(element.className != token){
+                interchangeTokenNumber(token)
                 element.className = token //to conquer other's places
-                changeTokenNumber(token,1)
             }
             val = element.innerHTML
             element.innerHTML = parseInt(val) + 1
