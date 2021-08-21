@@ -26,6 +26,7 @@ function move(element, moves, token){
         if(number > 2){
             if(element.className != token){ //to decrement the place where against party has 3 value
                 changeTokenNumber(element.className,-1)
+                changeTokenNumber(token,1)
             }            
             element.className = 'empty';
             element.innerHTML = ''

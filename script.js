@@ -16,12 +16,14 @@ function changeTokenNumber(token, value){
         let blue_count = document.getElementById('blue-count');
         let empty_spaces = document.getElementById('empty-spaces');
         blue_count.innerHTML = parseInt(blue_count.innerHTML) + value
+        console.log("blue: " +blue_count.innerHTML)
         empty_spaces.innerHTML = parseInt(empty_spaces.innerHTML) - value;
     }
     else{
         let red_count = document.getElementById('red-count');
         let empty_spaces = document.getElementById('empty-spaces');
         red_count.innerHTML = parseInt(red_count.innerHTML) + value
+        console.log("red: " +red_count.innerHTML)
         empty_spaces.innerHTML = parseInt(empty_spaces.innerHTML) - value;
     }
 }
@@ -31,9 +33,15 @@ function interchangeTokenNumber(token){
     if(token == 'player'){
         blue_count.innerHTML = parseInt(blue_count.innerHTML) + 1
         red_count.innerHTML = parseInt(red_count.innerHTML) - 1
+        console.log('exchange')
+        console.log("red: " +red_count.innerHTML)
+        console.log("blue: " +blue_count.innerHTML)
     }else{
         red_count.innerHTML = parseInt(red_count.innerHTML) + 1
         blue_count.innerHTML = parseInt(blue_count.innerHTML) - 1 
+        console.log('exchange')
+        console.log("red: " +red_count.innerHTML)
+        console.log("blue: " +blue_count.innerHTML)
     }
 }
 
