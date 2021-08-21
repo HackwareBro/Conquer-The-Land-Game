@@ -56,6 +56,18 @@ td{
     color: aliceblue;
     
 }
+
+div#info{
+    text-align: center;
+}
+.name{
+    font-weight: 400;
+    font-size: 20px;
+}
+.value{
+    font-weight: 400;
+    font-size: 30px;
+}
 @media screen and (max-width: 700px) {
     td{
         width: 20px;
