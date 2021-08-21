@@ -13,9 +13,8 @@ td{
     height: 40px;
     font-weight: 1000;
     text-align: center;
-    cursor: pointer;
     border: brown 2px solid;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .empty{
@@ -28,6 +27,7 @@ td{
     border: blue 2px solid;
     background-color: aqua;
     color: black;
+    cursor: pointer;
 }
 .player:hover{
     border-radius: 12px;
@@ -44,6 +44,7 @@ td{
     border: red 2px solid;
     background-color: pink;
     color: black;
+    cursor: pointer;    
 }
 .opponent:hover{
     border-radius: 12px;
@@ -53,6 +54,7 @@ td{
     border: pink 2px solid;
     background-color: red;
     color: aliceblue;
+    
 }
 @media screen and (max-width: 700px) {
     td{
