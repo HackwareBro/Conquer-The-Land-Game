@@ -26,7 +26,7 @@ function createGameArea(){
     opponent = document.getElementById('c' + _2dTo1d(1,1))
     opponent.className='opponent';
     opponent.innerHTML = '3'
-    player = document.getElementById('c' + _2dTo1d(8,8))
+    player = document.getElementById('c' + _2dTo1d(1,4))
     player.className='player';
     player.innerHTML='3';
 
