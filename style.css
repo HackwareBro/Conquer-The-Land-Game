@@ -164,6 +164,10 @@ background: #144E75; }
     font-size: 1rem;
     font-weight: 10000;
 }
+.flex{
+    display: flex;
+    flex-direction: row;
+}
 @media screen and (max-width: 700px) {
     td{
         width: 20px;
