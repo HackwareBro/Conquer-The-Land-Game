@@ -8,7 +8,7 @@ I will also improve the readablity of the code after implementing all the featur
 
 designing webpage contribution will be highly appreciated for this project. I haven't time to work on designing.
 ## Usage
-Just Visit the webpage : https://hackwarebro.github.io/Tic-Tac-Toe-Web/
+Just Visit the webpage : https://hackwarebro.github.io/Conquer-The-Land-Game/
 
 This game only supports 2 player mode!
 ## Contributing
