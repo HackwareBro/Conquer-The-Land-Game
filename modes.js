@@ -18,6 +18,18 @@ function restartGame(){
     screen.className = 'screen'
     createGameArea();
 }
+function showHelp(){
+    screen = document.getElementsByClassName('screen')[0];
+    screen.className = 'screen hide'
+    help_menu = document.getElementsByClassName('screen')[2];
+    help_menu.className = 'screen'    
+}
+function backButton(){
+    screen = document.getElementsByClassName('screen')[2];
+    screen.className = 'screen hide'
+    help_menu = document.getElementsByClassName('screen')[0];
+    help_menu.className = 'screen'    
+}
 
 
 //player Algorithm

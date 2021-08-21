@@ -55,14 +55,14 @@ function play(element){
         move(element,Object.assign({},first_moves),'player')
         first_turn = true;
         changeTurn();
-        checkWin();
+        // checkWin();
     }
     else if(first_turn == true && element.className == 'opponent'){
         move(element,Object.assign({},first_moves),'opponent')
         first_turn = false;
         incMoves();
         changeTurn();
-        checkWin();
+        // checkWin();
     }
 }
 function checkWin(){

@@ -42,6 +42,8 @@
         </div>
         <h1 id='temp-msg'></h1>
         <input type="button" class='startbtn' value="StartGame" onclick="setMode()">
+        <input type="button" class='startbtn' value="How to Play" onclick="showHelp()">
+
     </div>
     <!-- Game Win Screen -->
     <div class="screen hide">
@@ -50,6 +52,36 @@
         <h3 id='red-token'>Red Tokens : </h3>
         <h3 id='blue-token'>Blue Tokens : </h3>
         <button type="button" class='startbtn' value="restart" onclick="restartGame()">restartGame</button>
+    </div>
+    
+    <!-- help screen -->
+    <div class="screen hide">
+        <div>
+            <button class='startbtn small' onclick="backButton()">&lt;</button>
+            <h1 style="display:inline-block;"> How to play</h1>
+            <button class='startbtn small' onclick="moreHelp()">&gt;</button>
+        </div>
+        <div>
+            <figure>
+                <img src="assets/multiply.gif" alt="img1">
+                <figcaption>3 value token <br/>multiplies into 4 token</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/gameplay.gif" alt="img1">
+                <figcaption>Click on your token <br/> to increase the value by 1</figcaption>
+            </figure>
+        </div>
+        
+        <div>
+            <figure>
+                <img src="assets/attack1.gif" alt="img1">
+                <figcaption>Conquer opponent token<br/> by multiplying your token!</figcaption>
+            </figure>
+            <figure>
+                 <img src="assets/attack3.gif" alt="img1">
+                <figcaption>You can multiply many tokens <br/> in a one turn</figcaption>
+            </figure>
+        </div>
     </div>
     <table id='game-area'>
         <!-- whole game area generates by board.js -->
