@@ -16,6 +16,7 @@ function restartGame(){
     //display the start screen
     screen = document.getElementsByClassName('screen')[0];
     screen.className = 'screen'
+    createGameArea();
 }
 
 

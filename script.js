@@ -68,10 +68,10 @@ function play(element){
 function checkWin(){
     let move_limit = parseInt(document.getElementById('move-range').value)
     let move_count = document.getElementById('move-count').innerHTML;
+    let blue_count = document.getElementById('blue-count').innerHTML;
+    let red_count = document.getElementById('red-count').innerHTML;
     if(move_count == move_limit){
-        console.log('true entered')
-        let blue_count = document.getElementById('blue-count').innerHTML;
-        let red_count = document.getElementById('red-count').innerHTML;
+        
         end_screen = document.getElementsByClassName('screen')[1];
         end_screen.className = 'screen';            
         win_msg = document.getElementById('win-msg')
@@ -87,5 +87,20 @@ function checkWin(){
         document.getElementById('blue-token').innerHTML = 'Blue Tokens : ' + blue_count;
         document.getElementById('red-token').innerHTML = 'Red Tokens : ' + red_count; 
         document.getElementById('stat-msg').innerHTML = move_limit + " moves limit reached !";
+    }
+    else if(red_count == 0 || blue_count == 0){
+        end_screen = document.getElementsByClassName('screen')[1];
+        end_screen.className = 'screen';            
+        win_msg = document.getElementById('win-msg')
+        if(blue_count > red_count){
+            win_msg.innerHTML = 'blue wins !';
+            document.getElementById('stat-msg').innerHTML = "Blue team completely conquer the place!";
+        }
+       else if(red_count > blue_count){
+           win_msg.innerHTML = 'red wins !';
+           document.getElementById('stat-msg').innerHTML = "Red team completely conquer the place!";
+        }
+       document.getElementById('blue-token').innerHTML = 'Blue Tokens : ' + blue_count;
+        document.getElementById('red-token').innerHTML = 'Red Tokens : ' + red_count; 
     }
 }
