@@ -6,10 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="board.js" type="text/javascript" async></script>
+    <script src="modes.js" type="text/javascript" async></script>    
     <script src="script.js" type="text/javascript" async></script>
     <title>Conquer the land</title>
 </head>
 <body>
+    <div id='banner'>
+        <h1>
+            Conquer the Land Game
+        </h1>
+        <h2>
+            Made by : <a href="https://github.com/HackwareBro">Hackware Bro</a>
+        </h2>
+    </div>
+    <div class='screen'>
+        <h1>Conquer the Land</h1>
+        <h2>
+            Made by : <a href="https://github.com/HackwareBro">Hackware Bro</a>
+        </h2>
+        <div>
+            <label for="move-range">Choose a range of moves to end the game:</label>
+            <select name="move-range" id="move-range">
+            <option value="100">100</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+            <option value="250">250</option>
+            </select>    
+        </div>
+        <div id="modebox">
+            <input type="radio" id='2p' name="mode" value="2p">
+            <label for="2p">play 2 players</label>
+            <input type="radio" id='cpu' name="mode" value="cpu" checked="checked">
+            <label for="cpu">play with CPU</label>
+        </div>
+        <h1 id='temp-msg'></h1>
+        <input type="button" id='startbtn' value="StartGame" onclick="setMode()">
+    </div>
     <table id='game-area'>
         <!-- whole game area generates by board.js -->
     </table>

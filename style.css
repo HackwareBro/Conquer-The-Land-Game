@@ -3,7 +3,22 @@ body{
     padding: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+#banner{
+    background-color: black;
+    color : white;
+    text-align: center;
+}
+#banner > h1{
+    color: #FFFFFF;
+    background: black;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+a{
+    color: antiquewhite;
+}
+a:hover{
+    color: azure;
+}
 table#game-area{
     border-spacing: 10px;
     margin: 0% auto;
@@ -68,6 +83,61 @@ div#info{
     font-weight: 400;
     font-size: 30px;
 }
+/* Start screen design */
+.screen.hide{
+    display: none;
+}
+.screen{
+    font-weight: 700;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color : white;
+  
+}
+.screen > *{
+    margin: 20px;
+}
+.screen > h1{
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+.screen > h2{
+    color : white;
+    text-align: center;
+}
+
+#startbtn {
+    color: rgb(255, 255, 255);
+    font-size: 32px; 
+    line-height: 16px; 
+    border-radius: 10px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
+    border: 2px solid rgb(28, 110, 164); 
+    display: inline-block;
+    padding: 20px;
+}
+#startbtn:hover {
+background: #1C6EA4; 
+}
+#startbtn:active {
+background: #144E75; }
+
 @media screen and (max-width: 700px) {
     td{
         width: 20px;
