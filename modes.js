@@ -9,6 +9,14 @@ function setMode(){
     }
 
 }
+function restartGame(){
+    // remove the end screen
+    screen = document.getElementsByClassName('screen')[1];
+    screen.className = 'screen hide'
+    //display the start screen
+    screen = document.getElementsByClassName('screen')[0];
+    screen.className = 'screen'
+}
 
 
 //player Algorithm
@@ -73,19 +81,18 @@ function move(element, moves, token){
                 }
             }
             if(moves.left == true){
-                console.log(moves)
+               
                 move(left,Object.assign({},moves),token);
             }
             if(moves.right == true){
-                console.log(right + ' true')
+         
                 move(right,Object.assign({},moves),token);
             }
             if(moves.up == true){
-                console.log(up + ' true')
+               
                 move(up,Object.assign({},moves),token);
             }
             if(moves.down == true){
-                console.log(down + ' true')
                 move(down,Object.assign({},moves),token);
             }
         }

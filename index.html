@@ -19,18 +19,19 @@
             Made by : <a href="https://github.com/HackwareBro">Hackware Bro</a>
         </h2>
     </div>
+    <!-- Main start screen -->
     <div class='screen'>
         <h1>Conquer the Land</h1>
         <h2>
             Made by : <a href="https://github.com/HackwareBro">Hackware Bro</a>
         </h2>
         <div>
-            <label for="move-range">Choose a range of moves to end the game:</label>
+            <label for="move-range">Choose the range of moves to end the game : </label>
             <select name="move-range" id="move-range">
+            <option value="50">50</option>
             <option value="100">100</option>
             <option value="150">150</option>
             <option value="200">200</option>
-            <option value="250">250</option>
             </select>    
         </div>
         <div id="modebox">
@@ -40,7 +41,15 @@
             <label for="cpu">play with CPU</label>
         </div>
         <h1 id='temp-msg'></h1>
-        <input type="button" id='startbtn' value="StartGame" onclick="setMode()">
+        <input type="button" class='startbtn' value="StartGame" onclick="setMode()">
+    </div>
+    <!-- Game Win Screen -->
+    <div class="screen hide">
+        <h2 id='win-msg'>red wins</h2>
+        <h3 id='stat-msg'></h3>
+        <h3 id='red-token'>Red Tokens : </h3>
+        <h3 id='blue-token'>Blue Tokens : </h3>
+        <button type="button" class='startbtn' value="restart" onclick="restartGame()">restartGame</button>
     </div>
     <table id='game-area'>
         <!-- whole game area generates by board.js -->

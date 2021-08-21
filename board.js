@@ -19,7 +19,6 @@ function createGameArea(){
             col.id = 'c'+ _2dTo1d(i,j);
             col.className = 'empty'
             col.setAttribute('onclick','play(this)')
-            // col.appendChild(document.createTextNode('ta1'))  just for testing
             document.querySelector('tr#r'+i).appendChild(col);
         }
     }
