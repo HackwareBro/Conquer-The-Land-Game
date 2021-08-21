@@ -8,13 +8,14 @@ figure{
     margin: 20px;
     margin-bottom: 0;
     margin-top: 0;
+    font-size: 0.8rem;
 }
 img{
     -webkit-box-shadow: 5px 5px 15px 5px #000000; 
     box-shadow: 5px 5px 15px 5px #000000;
     border-radius: 20px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border : white 5px solid;
 }
 #banner{
@@ -168,5 +169,9 @@ background: #144E75; }
         width: 20px;
         height: 20px;
         border: black 2px solid;
+    }
+    img{
+        width: 120px;
+        height: 120px;
     }
 }
