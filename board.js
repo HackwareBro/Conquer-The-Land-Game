@@ -37,7 +37,8 @@ function resetBoard(){
     document.getElementsByClassName('info')[0].className = 'info blue'
     document.getElementById('blue-count').innerHTML = 1;
     document.getElementById('red-count').innerHTML = 1;
-
+    //cpu_tokens array should be reset as well
+    cpu_tokens = [];
     for(let i = 0; i < 100; i++){
         place = document.getElementById('c'+i);
         if(i == 11){
