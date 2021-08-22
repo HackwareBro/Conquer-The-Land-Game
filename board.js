@@ -41,11 +41,11 @@ function resetBoard(){
     cpu_tokens = [];
     for(let i = 0; i < 100; i++){
         place = document.getElementById('c'+i);
-        if(i == 11){
+        if(i == 22){
             place.className = 'opponent';
             place.innerHTML = '3'
         }
-        else if(i == 88){
+        else if(i == 77){
             place.className = 'player';
             place.innerHTML = '3'
         }
