@@ -208,6 +208,9 @@ background: #144E75; }
     flex-direction: row;
 }
 @media screen and (max-width: 700px) {
+    div.info{
+        width: 300px;
+    }
     td{
         width: 20px;
         height: 20px;
