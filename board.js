@@ -23,10 +23,10 @@ function createGameArea(){
         }
     }
     // setting start position for both players
-    opponent = document.getElementById('c' + _2dTo1d(1,1))
+    opponent = document.getElementById('c' + _2dTo1d(2,2))
     opponent.className='opponent';
     opponent.innerHTML = '3'
-    player = document.getElementById('c' + _2dTo1d(8,8))
+    player = document.getElementById('c' + _2dTo1d(7,7))
     player.className='player';
     player.innerHTML='3';
 

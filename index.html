@@ -33,6 +33,8 @@
             <option value="100">100</option>
             <option value="150">150</option>
             <option value="200">200</option>
+            <option value="200">250</option>
+            <option value="200">300</option>
             </select>    
         </div>
         <div id="modebox">
@@ -41,7 +43,7 @@
             <input type="radio" id='cpu' name="mode" value="cpu" checked="checked">
             <label for="cpu">play with CPU</label>
         </div>
-        
+            
         <h2 id='temp-msg'></h2>
         <input type="button" class='startbtn' value="StartGame" onclick="setMode()">
         <input type="button" class='startbtn' value="How to Play" onclick="showHelp()">
@@ -85,23 +87,29 @@
             </figure>
         </div>
     </div>
+    <div class="info blue">
+        <div class='stats'>
+            <span class="name">Moves:&nbsp;</span>
+            <span class="value" id="move-count">0</span>         
+        </div>
+        <div class='stats'>
+            <span class="name">Turn:&nbsp;</span>
+            <span class="value" id='turn'>Blue</span>
+        </div>
+    </div>
     <table id='game-area'>
         <!-- whole game area generates by board.js -->
     </table>
-    <div id = 'info'>
-        <div id='stats'>
-            <span class="name">Moves:&nbsp;</span>
-            <span class="value" id="move-count">0</span>
-            <span class="name">Turn:&nbsp;</span>
-            <span class="value" id='turn'>Blue</span>
-            <span class="name">Empty Places:&nbsp;</span>
-            <span class="value" id="empty-spaces">98</span>            
-        </div>
+    <div class = 'info'>
         <div id='score'>
-            <span class="name">Blue Tokens:&nbsp;</span>
-            <span class="value" id="blue-count">1</span>
-            <span class="name">Red Tokens:&nbsp;</span>
-            <span class="value" id="red-count">1</span>
+            <blue>
+                <span class="name">Blue Tokens:&nbsp;</span>
+                <span class="value" id="blue-count">1</span>
+            </blue>
+            <red>
+                <span class="name">Red Tokens:&nbsp;</span>
+                <span class="value" id="red-count">1</span>
+            </red>
         </div>
     </div>
 </body>

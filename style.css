@@ -80,15 +80,54 @@ td{
     border-radius: 12px;
 }
 
-.opponent:active{
+/* active class for pressing cpu  */
+.opponent:active , .active{     
     border: pink 2px solid;
     background-color: red;
     color: aliceblue;
     
 }
 
-div#info{
+div.info{
+    color: white;
+    margin: 0% auto;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    background: #020202;
+    background: -moz-linear-gradient(left, #020202 0%, #7C7C7C 50%, #373737 100%);
+    background: -webkit-linear-gradient(left, #020202 0%, #7C7C7C 50%, #373737 100%);
+    background: linear-gradient(to right, #020202 0%, #7C7C7C 50%, #373737 100%);
+}
+blue, red{
+    text-shadow: 2px 2px 2px black;
+}
+blue{
+    color : aqua;
+}
+red{
+    color: pink;
+}
+.stats{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-shadow: 2px 2px 2px #1C0808;
+}
+div.info.blue{
+    color: #FFF;
+    background: #5034CE;
+background: -moz-linear-gradient(left, #5034CE 0%, #1C6EA4 50%, #5D28C5 100%);
+background: -webkit-linear-gradient(left, #5034CE 0%, #1C6EA4 50%, #5D28C5 100%);
+background: linear-gradient(to right, #5034CE 0%, #1C6EA4 50%, #5D28C5 100%);
+}
+div.info.red{
+    color: #FFF;
+    background: #FF0000;
+background: -moz-linear-gradient(left, #FF0000 0%, #C67272 50%, #AF0000 100%);
+background: -webkit-linear-gradient(left, #FF0000 0%, #C67272 50%, #AF0000 100%);
+background: linear-gradient(to right, #FF0000 0%, #C67272 50%, #AF0000 100%);
 }
 .name{
     font-weight: 400;
@@ -155,7 +194,7 @@ div#info{
 .startbtn:hover {
 background: #1C6EA4; 
 }
-.startbtn:active {
+.startbtn:active{
 background: #144E75; }
 
 .small{
