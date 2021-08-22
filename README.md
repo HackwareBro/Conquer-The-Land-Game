@@ -1,17 +1,20 @@
 # Conquer the Land Game
 <b>The main moto to make this game is to polish my problem-solving skills because that's the secret key to achieve success in ethical hacking</b>
 
-I am also working on making CPU mode. At the first, I will make using random selection and after I learned AI then I will surely upgrade it.
-
-I will also improve the readablity of the code after implementing all the features.
+I will also improve the readablity of the code very soon!
 
 <b>This will be updated time to time!</b>
 
 As i said, i just focused on logics so if anyone is interested to improve the UI then his/her contribution will be highly appreciated.
-## Usage
-Just Visit the webpage : https://hackwarebro.github.io/Conquer-The-Land-Game/
 
-This game only supports 2 player mode!
+## Usage
+<h2>Just Visit the webpage : <a href='https://hackwarebro.github.io/Conquer-The-Land-Game/'>https://hackwarebro.github.io/Conquer-The-Land-Game/</a>
+</h2>
+
+This game also supports CPU mode as well!.
+
+![image](https://user-images.githubusercontent.com/85396426/130353024-2404bebb-05c0-4880-8b50-5ca79926c9c5.png)
+
 
 ## Gameplay
 Simply, you have to win by occuring the more places than your opponent within a prescribed limit of moves which you selects in the start of the game.
@@ -30,7 +33,6 @@ you can check the gameplay in the how to play game section on my webpage.
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
-
 
 <hr>
 <div align = "center">

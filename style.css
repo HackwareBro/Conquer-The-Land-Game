@@ -209,7 +209,7 @@ background: #144E75; }
 }
 @media screen and (max-width: 700px) {
     div.info{
-        width: 300px;
+        width: 100%;
     }
     td{
         width: 20px;
