@@ -145,7 +145,7 @@ function arrayRemove(value) {
 
 //player Algorithm
 function move(element, moves, token){
-    if(element.className != 'empty'){        
+    if(typeof element == 'object' && element.className != 'empty'){        
         let number = parseInt(element.innerHTML, 10)    
         if(number > 2){
             if(element.className != token){ //to decrement the place where against party has 3 value
